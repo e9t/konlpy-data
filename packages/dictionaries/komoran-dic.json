@@ -1,0 +1,9 @@
+{
+    "id": "komoran-dic",
+    "ext": "zip",
+    "name": "KOMORAN dictionary",
+    "description": "Dictionary for the KOMORAN morphological analyzer",
+    "author": "Shineware",
+    "languages": ["Korean"],
+    "copyright": ["Apache 2.0"]
+}
