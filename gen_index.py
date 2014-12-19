@@ -22,8 +22,6 @@ def get_meta(jsonpath):
     d['checksum'] = hashlib.md5(open(d['filepath'], 'rb').read()).hexdigest()
     d['size'] = os.path.getsize(d['filepath'])
 
-    del d['id']
-
     return d
 
 

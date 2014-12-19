@@ -1,10 +1,10 @@
 {
   "komoran-dic": {
-    "description": "Dictionary for the Komoran morphological analyzer", 
+    "description": "Dictionary for the KOMORAN morphological analyzer", 
     "copyright": [
       "Apache 2.0"
     ], 
-    "author": "shineware", 
+    "author": "Shineware", 
     "checksum": "c6327fe07415dc83526e7014ba8afad7", 
     "filepath": "./packages/dictionaries/komoran-dic.zip", 
     "languages": [
@@ -13,7 +13,8 @@
     "ext": "zip", 
     "size": 4209393, 
     "type": "dictionaries", 
-    "name": "Komoran dictionary"
+    "id": "komoran-dic", 
+    "name": "KOMORAN dictionary"
   }, 
   "mecab-ko": {
     "description": "MeCab-ko tagger and morphological analyzer", 
@@ -31,6 +32,7 @@
     "ext": "tar", 
     "size": 1413899, 
     "type": "taggers", 
+    "id": "mecab-ko", 
     "name": "MeCab-ko Tagger"
   }, 
   "mecab-ko-dic": {
@@ -49,6 +51,7 @@
     "ext": "tar", 
     "size": 50345380, 
     "type": "dictionaries", 
+    "id": "mecab-ko-dic", 
     "name": "MeCab-ko dictionary"
   }, 
   "kobill": {
@@ -57,14 +60,15 @@
       ""
     ], 
     "author": "National Assembly of Korea", 
-    "checksum": "25ac1b395c5393ecff4c28bb8240d0e6", 
-    "filepath": "./packages/corpora/kobill.zip", 
+    "checksum": "9228ba5940296911aeaaf8e448357766", 
+    "filepath": "./packages/corpora/kobill.tar.gz", 
     "languages": [
       "Korean"
     ], 
-    "ext": "zip", 
-    "size": 84702109, 
+    "ext": "tar.gz", 
+    "size": 74548489, 
     "type": "corpora", 
+    "id": "kobill", 
     "name": "National Assembly Bills"
   }
 }
