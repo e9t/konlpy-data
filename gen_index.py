@@ -18,9 +18,10 @@ def get_meta(jsonpath):
         d = json.load(f)
 
     d['type'] = jsonpath.split(os.path.sep)[1]
-    d['filepath'] = '%s.%s' % (os.path.join(MAINDIR, d['type'], d['id']), d['ext'])
-    d['checksum'] = hashlib.md5(open(d['filepath'], 'rb').read()).hexdigest()
-    d['size'] = os.path.getsize(d['filepath'])
+    d['filepath'] = '%s.%s' % (os.path.join(d['type'], d['id']), d['ext'])
+    filepath = '%s/%s' % (MAINDIR, d['filepath'])
+    d['checksum'] = hashlib.md5(open(filepath, 'rb').read()).hexdigest()
+    d['size'] = os.path.getsize(filepath)
 
     return d
 

@@ -6,7 +6,7 @@
     ], 
     "author": "Shineware", 
     "checksum": "c6327fe07415dc83526e7014ba8afad7", 
-    "filepath": "./packages/dictionaries/komoran-dic.zip", 
+    "filepath": "dictionaries/komoran-dic.zip", 
     "languages": [
       "Korean"
     ], 
@@ -25,7 +25,7 @@
     ], 
     "author": "Yong-woon Lee and Youngho Yoo", 
     "checksum": "0e3c33eb6031565f0f695f9b65bc477a", 
-    "filepath": "./packages/taggers/mecab-ko.tar", 
+    "filepath": "taggers/mecab-ko.tar", 
     "languages": [
       "Korean"
     ], 
@@ -44,7 +44,7 @@
     ], 
     "author": "Yong-woon Lee and Youngho Yoo", 
     "checksum": "13b94dfc53af5edbedc074f280418719", 
-    "filepath": "./packages/dictionaries/mecab-ko-dic.tar", 
+    "filepath": "dictionaries/mecab-ko-dic.tar", 
     "languages": [
       "Korean"
     ], 
@@ -61,7 +61,7 @@
     ], 
     "author": "National Assembly of Korea", 
     "checksum": "9228ba5940296911aeaaf8e448357766", 
-    "filepath": "./packages/corpora/kobill.tar.gz", 
+    "filepath": "corpora/kobill.tar.gz", 
     "languages": [
       "Korean"
     ], 

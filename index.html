@@ -62,7 +62,7 @@
                 .text("[Meta]");
             name.append("a")
                 .attr("class", "small")
-                .attr("href", function(d) { return "http://konlpy.github.io/konlpy-data/" + d["filepath"].substring(2) })
+                .attr("href", function(d) { return "http://konlpy.github.io/konlpy-data/packages/" + d["filepath"] })
                 .text("[Download]");
 
             var desc = subcontainer.append("p").text(function(d) { return d["description"] });
