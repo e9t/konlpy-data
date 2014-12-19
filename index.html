@@ -65,8 +65,9 @@
                 .attr("href", function(d) { return "http://konlpy.github.io/konlpy-data/" + d["filepath"].substring(2) })
                 .text("[Download]");
 
+            var desc = subcontainer.append("p").text(function(d) { return d["description"] });
+
             var list = subcontainer.append("ul");
-            list.append("li").text(function(d) { return d["description"] });
             list.append("li").text(function(d) { return "Author: " + d["author"] });
             list.append("li").text(function(d) { return "License: " + d["copyright"] });
         }
