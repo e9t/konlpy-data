@@ -58,12 +58,12 @@
                 .text(function(d) { return "(" + Math.round(d["size"]/1000000) + "MB)" });
             name.append("a")
                 .attr("class", "small")
-                .attr("href", function(d) { return "https://raw.githubusercontent.com/konlpy/konlpy-data/gh-pages/packages/dictionaries/" + d["id"] + ".json" })
+                .attr("href", function(d) { return "http://konlpy.github.io/konlpy-data/packages/" + d["type"] + "/" + d["id"] + ".json" })
                 .text("[Meta]");
             name.append("a")
                 .attr("class", "small")
-                .attr("href", function(d) { return "https://github.com/konlpy/konlpy-data/raw/gh-pages/" + d["filepath"].substring(1) })
-                .text("[Source]");
+                .attr("href", function(d) { return "http://konlpy.github.io/konlpy-data/" + d["filepath"].substring(1) })
+                .text("[Download]");
 
             var list = subcontainer.append("ul");
             list.append("li").text(function(d) { return d["description"] });
