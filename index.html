@@ -5,9 +5,20 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"
             type="text/javascript"></script>
         <script src="http://d3js.org/d3.v3.min.js" type="text/javascript"></script>
+        <style>
+            h2 {
+                text-transform: capitalize;
+            }
+
+            .small {
+                font-weight: normal;
+                font-size: 70%;
+                margin-left: 5px;
+            }
+        </style>
     </head>
     <body>
-    <h2>KoNLPy Data</h2>
+    <h1>KoNLPy Data</h1>
 
     To download the packages, use the KoNLPy downloader.
 
@@ -15,6 +26,52 @@
     >>> import konlpy
     >>> konlpy.download()
     </pre>
+
+    <div id="packages"></div>
+    <script>
+    d3.json("index.json", function(error, data) {
+        var types = ["dictionaries", "corpora", "taggers"];
+        var packages = [];
+        for (var item in data) {
+            packages.push(data[item]);
+        }
+
+        for (var i in types) {
+            var container = d3.select("#packages")
+                                .append("div")
+                                .attr("id", function(d) { return types[i] });
+
+            container.append("h2")
+                .text(function(d) { return types[i] });
+
+            var subcontainer = container.selectAll("div")
+                                .data(packages.filter(
+                                    function(d) { return d.type==types[i] }
+                                    )).enter().append("div");
+
+            var name = subcontainer.append("h3");
+            name.append("span")
+                .attr("id", function(d) { return d["id"] })
+                .text(function(d) { return d["name"] });
+            name.append("span")
+                .attr("class", "small")
+                .text(function(d) { return "(" + Math.round(d["size"]/1000000) + "MB)" });
+            name.append("a")
+                .attr("class", "small")
+                .attr("href", function(d) { return "https://raw.githubusercontent.com/konlpy/konlpy-data/gh-pages/packages/dictionaries/" + d["id"] + ".json" })
+                .text("[Meta]");
+            name.append("a")
+                .attr("class", "small")
+                .attr("href", function(d) { return "https://github.com/konlpy/konlpy-data/raw/gh-pages/" + d["filepath"].substring(1) })
+                .text("[Source]");
+
+            var list = subcontainer.append("ul");
+            list.append("li").text(function(d) { return d["description"] });
+            list.append("li").text(function(d) { return "Author: " + d["author"] });
+            list.append("li").text(function(d) { return "License: " + d["copyright"] });
+        }
+    });
+    </script>
     </body>
 </html>
 
