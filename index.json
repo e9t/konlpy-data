@@ -1,0 +1,70 @@
+{
+  "komoran-dic": {
+    "description": "Dictionary for the Komoran morphological analyzer", 
+    "copyright": [
+      "Apache 2.0"
+    ], 
+    "author": "shineware", 
+    "checksum": "c6327fe07415dc83526e7014ba8afad7", 
+    "filepath": "./packages/dictionaries/komoran-dic.zip", 
+    "languages": [
+      "Korean"
+    ], 
+    "ext": "zip", 
+    "size": 4209393, 
+    "type": "dictionaries", 
+    "name": "Komoran dictionary"
+  }, 
+  "mecab-ko": {
+    "description": "MeCab-ko tagger and morphological analyzer", 
+    "copyright": [
+      "GPL", 
+      "LGPL", 
+      "BSD"
+    ], 
+    "author": "Yong-woon Lee and Youngho Yoo", 
+    "checksum": "0e3c33eb6031565f0f695f9b65bc477a", 
+    "filepath": "./packages/taggers/mecab-ko.tar", 
+    "languages": [
+      "Korean"
+    ], 
+    "ext": "tar", 
+    "size": 1413899, 
+    "type": "taggers", 
+    "name": "MeCab-ko Tagger"
+  }, 
+  "mecab-ko-dic": {
+    "description": "Dictionary for the MeCab-ko morphological analyzer", 
+    "copyright": [
+      "GPL", 
+      "LGPL", 
+      "BSD"
+    ], 
+    "author": "Yong-woon Lee and Youngho Yoo", 
+    "checksum": "13b94dfc53af5edbedc074f280418719", 
+    "filepath": "./packages/dictionaries/mecab-ko-dic.tar", 
+    "languages": [
+      "Korean"
+    ], 
+    "ext": "tar", 
+    "size": 50345380, 
+    "type": "dictionaries", 
+    "name": "MeCab-ko dictionary"
+  }, 
+  "kobill": {
+    "description": "Bills of the 18th Korean National Assembly", 
+    "copyright": [
+      ""
+    ], 
+    "author": "National Assembly of Korea", 
+    "checksum": "25ac1b395c5393ecff4c28bb8240d0e6", 
+    "filepath": "./packages/corpora/kobill.zip", 
+    "languages": [
+      "Korean"
+    ], 
+    "ext": "zip", 
+    "size": 84702109, 
+    "type": "corpora", 
+    "name": "National Assembly Bills"
+  }
+}

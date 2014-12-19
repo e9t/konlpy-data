@@ -1,0 +1,9 @@
+{
+    "id": "mecab-ko-dic",
+    "ext": "tar",
+    "name": "MeCab-ko dictionary",
+    "description": "Dictionary for the MeCab-ko morphological analyzer",
+    "author": "Yong-woon Lee and Youngho Yoo",
+    "languages": ["Korean"],
+    "copyright": ["GPL", "LGPL", "BSD"]
+}
