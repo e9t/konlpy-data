@@ -56,6 +56,26 @@
     "id": "mecab-ko-dic", 
     "name": "MeCab-ko dictionary"
   }, 
+  "mecab-ko-python": {
+    "description": "Python wrapper for the MeCab-ko morphological analyzer", 
+    "copyright": [
+      "GPL", 
+      "LGPL", 
+      "BSD"
+    ], 
+    "author": "Yong-woon Lee and Youngho Yoo", 
+    "checksum": "c535da67bb0ace90e25ddff9a303d766", 
+    "filepath": "converters/mecab-ko-python.zip", 
+    "languages": [
+      "Korean"
+    ], 
+    "ext": "zip", 
+    "install": 1, 
+    "size": 65733, 
+    "type": "converters", 
+    "id": "mecab-ko-python", 
+    "name": "MeCab-ko Python wrapper"
+  }, 
   "kobill": {
     "description": "Bills of the 18th Korean National Assembly", 
     "copyright": [

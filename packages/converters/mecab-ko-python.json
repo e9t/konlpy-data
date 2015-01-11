@@ -1,0 +1,10 @@
+{
+    "id": "mecab-ko-python",
+    "ext": "zip",
+    "name": "MeCab-ko Python wrapper",
+    "description": "Python wrapper for the MeCab-ko morphological analyzer",
+    "author": "Yong-woon Lee and Youngho Yoo",
+    "install": 1,
+    "languages": ["Korean"],
+    "copyright": ["GPL", "LGPL", "BSD"]
+}
