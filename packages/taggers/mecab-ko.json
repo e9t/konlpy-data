@@ -4,6 +4,7 @@
     "name": "MeCab-ko Tagger",
     "description": "MeCab-ko tagger and morphological analyzer",
     "author": "Yong-woon Lee and Youngho Yoo",
+    "install": 1,
     "languages": ["Korean"],
     "copyright": ["GPL", "LGPL", "BSD"]
 }

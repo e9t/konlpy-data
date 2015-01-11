@@ -30,6 +30,7 @@
       "Korean"
     ], 
     "ext": "tar", 
+    "install": 1, 
     "size": 1413899, 
     "type": "taggers", 
     "id": "mecab-ko", 
@@ -49,6 +50,7 @@
       "Korean"
     ], 
     "ext": "tar", 
+    "install": 1, 
     "size": 50345380, 
     "type": "dictionaries", 
     "id": "mecab-ko-dic", 
